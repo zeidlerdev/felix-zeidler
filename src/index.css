@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .animate-in {
+    animation-fill-mode: both;
+  }
+  .slide-in-from-top {
+    animation-name: slideInFromTop;
+  }
+  .slide-in-from-bottom {
+    animation-name: slideInFromBottom;
+  }
+  .duration-300 {
+    animation-duration: 500ms;
+  }
+  .duration-200 {
+    animation-duration: 500ms;
+  }
+  .duration-700 {
+    animation-duration: 700ms;
+  }
+
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+  .delay-300 {
+    animation-delay: 300ms;
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.headlines {
+  color: white;
+}
+.spans {
+  color: rgb(30, 150, 255);
+}
+.button-one {
+  background: rgb(30, 150, 255);
+  border-radius: 8px;
+  padding: 6px 12px;
+}
+.button-two {
+  background: rgb(255, 255, 255);
+  color: black;
+  border-radius: 8px;
+  padding: 6px 12px;
+}
+.links {
+  color: rgb(255, 255, 255);
+}
+.links:hover {
+  color: rgb(156, 156, 156);
+}
