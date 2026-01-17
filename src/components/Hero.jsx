@@ -1,5 +1,5 @@
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { ArrowRight, ChevronDown, Contact } from "lucide-react";
+import { ArrowRight, ChevronDown, CodeXml, Contact } from "lucide-react";
 import { useEffect, useState } from "react";
 import React from "react";
 import { codeExamples, floatingCards } from "../data/CodeExamples";
@@ -31,28 +31,31 @@ export default function Hero() {
                 <div className="absolute bottom-20 right-4 sm:right-10 w-64 sm:w-96 h64 sm:h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
                 
                 <div className="max-w-7xl mx-auto text-center relative w-full">
-                    <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center relative">
+                    <div className="max-w-7xl mx-auto flex flex-col lg:grid text-center lg:text-left lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center relative">
                     <div>
                         <div>
                             <div className="inline-flex items-center space-x-2 px-3 sm:px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700">
-                                <Sparkles className="w-4 h-4 text-blue-400 "/>
+                       
+                                <CodeXml className="w-4 h-4 text-blue-400 "/>
                                 <span className="text-xs sm:text-sm text-blue-500">Fullstack Webdeveloper</span>
                             </div>
                         </div>
                         <h1 className="text-5xl sm:text-3xl mg:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700 delay-100 leading-tight">
                             <span className="bg-linear-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">
-                                Website Building
+                                <span className="lg:text-cyan-500">W</span>ebsite Building
                             </span>
                             <span className="bg-linear-to-b from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent block mb-1 sm:mb-2">
-                                Website Maintenance
+                                <span className="lg:text-cyan-500">W</span>ebsite Maintenance
                             </span>
                             <span className="bg-linear-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">
-                                Felix Zeidler Webdevelopment
+                                <span className="lg:text-cyan-500">W</span>ebdevelopment
                             </span>
                         </h1>
                         <p className="text-md sm:text-base lg:text-lg text-gray-400 max-w-2xl mx-auto lg:mx-0 mb-6 sm:mb-8 animate-in slide-in-from-bottom duration-700 delay-200 leading-relaxed">
-                            I build accessible, pixel-perfect, performant, and
-                                engaging web experiences for everyone.
+                             I build dynamic websites and applications, expertly handling both the user-facing parts 
+                              and the server-side logic, databases, 
+                             and infrastructure to ensure everything works together seamlessly,
+                              creating complete, functional, and engaging digital experiences from concept to deployment. 
                         </p>
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-8 sm:mb-12 animate-in slide-in-from-bottom duration-700 delay-300">
                             <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-linear-to-b from-blue-600 to-blue-400 rounded-lg font-semibold text-sm sm:text-base transition.all duration-300 hover:scale-102 flex items-center justify-center space-x-2">
@@ -67,7 +70,7 @@ export default function Hero() {
                             </button>
                         </div>
                     </div>
-                <div className="relative order-2 w-full">
+                <div className="relative order-2 w-full animate-in slide-in-from-bottom duration-700">
                     <div className="relative bg-white/5 backdrop-blur-xl rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-2xl border border-white/10">
                         <div className="bg-linear-to-br from-gray-900/20 to-gray-800/20 backdrop-blur-sm rounded-lg overflow-hidden h-70 sm:h-87.5 lg:h-112.5 border border-white/5">
                             {/*Headline-image*/}

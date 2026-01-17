@@ -9,6 +9,7 @@ export const codeExamples = {
 </head>
 <body>
     <h1>Hello, Frontend!</h1>
+    <p>Design me with CSS and JavaScript!
 </body>
 </html>`,
 
