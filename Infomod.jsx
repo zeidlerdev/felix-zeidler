@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
-export default function Info() {
+export default function Infomod() {
   const RevealOnScroll = ({ children }) => {
     const [isVisible, setIsVisible] = useState(false);
     const ref = useRef(null);
@@ -34,7 +34,7 @@ export default function Info() {
   return (
     <RevealOnScroll>
       <section className="relative h-auto flex flex-col justify-center pt-16 sm:pt-20 px-4 sm:px-16 lg:px-8 overflow-hidden">
-        <div className="w-full text-center mb-10">
+        <div className="w-full text-center mb-10" id="frontend">
           <h1 className="text-4xl">
             Web Development Information you might need!
           </h1>
@@ -45,7 +45,7 @@ export default function Info() {
         <div className="max-w-7xl text-center mx-auto relative w-full animate-in slide-in-from-bottom duration-700">
           <div className="h-auto">
             <div className="lg:flex sm:block gap-4 overflow-hidden lg:h-auto lg:sm:h-auto text-sm">
-              <div className="lg:flex items-center px-3 sm:px-4 py-2 sm:py-3 h-auto border-r border-blue-500">
+              <div className="lg:flex items-center px-3 sm:px-4 py-2 sm:py-3 h-auto lg:border-r border-blue-500">
                 <div className="text-4xl lg:text-5xl h-auto">
                   <span className="lg:block text-blue-500">F</span>
                   <span className="lg:block text-blue-500 lg:pl-10 pl-1">
@@ -149,7 +149,10 @@ export default function Info() {
             </div>
           </div>
         </div>
-        <div className="max-w-7xl text-center mx-auto mt-10 w-full animate-in slide-in-from-bottom duration-700">
+        <div
+          className="max-w-7xl text-center mx-auto mt-10 w-full animate-in slide-in-from-bottom duration-700"
+          id="backend"
+        >
           <div className="h-auto">
             <div className="lg:flex sm:block gap-4 overflow-hidden lg:h-auto lg:sm:h-auto text-sm h-auto">
               <div className="lg:hidden md:flex sm:flex items-center px-3 sm:px-4 py-2 sm:py-3">
@@ -277,7 +280,7 @@ export default function Info() {
                   </div>
                 </div>
               </div>
-              <div className="lg:flex md:hidden hidden items-center px-3 sm:px-4 py-2 sm:py-3 border-l border-green-500">
+              <div className="lg:flex md:hidden hidden items-center px-3 sm:px-4 py-2 sm:py-3 lg:border-l border-green-500">
                 <div className="text-4xl lg:text-5xl">
                   <span className="lg:block text-green-500 lg:pr-10">B</span>
                   <span className="lg:block text-green-500 lg:pr-20 pr-1">
@@ -297,10 +300,13 @@ export default function Info() {
             </div>
           </div>
         </div>
-        <div className="max-w-7xl text-center mx-auto mt-10 relative w-full animate-in slide-in-from-bottom duration-700">
+        <div
+          className="max-w-7xl text-center mx-auto mt-10 relative w-full animate-in slide-in-from-bottom duration-700"
+          id="database"
+        >
           <div className="h-auto">
             <div className="lg:flex sm:block gap-4 overflow-hidden lg:h-auto lg:sm:h-auto text-sm">
-              <div className="lg:flex items-center px-3 sm:px-4 py-2 sm:py-3 h-auto border-r border-yellow-500">
+              <div className="lg:flex items-center px-3 sm:px-4 py-2 sm:py-3 h-auto lg:border-r border-yellow-500">
                 <div className="text-4xl lg:text-5xl h-auto">
                   <span className="lg:block text-yellow-500">D</span>
                   <span className="lg:block text-yellow-500 lg:pl-10 pl-1">

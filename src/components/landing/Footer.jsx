@@ -7,46 +7,15 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 
-export default function NavBar() {
-  const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
+export default function Footer() {
   return (
-    <nav className="fixed top-0 w-full z-50 transition-all duration-300 bg-slate-950/20 backdrop-blur-sm ">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-14 sm:h-16 md:h-20">
-          <div className="flex items-center space-x-1 group cursor-pointer">
-            <div>
-              <img
-                src="/logofz.svg"
-                alt="Felix Zeidler Development"
-                className="w-8 h-8 sm:w-10 sm:h-10"
-              ></img>
-            </div>
-            <span className="text-lg sm:text-xl md:text-2xl font-bold">
-              <span className="headlines">Felix </span>
-              <span className="spans">Zeidler</span>
-              <span>.</span>
-            </span>
+    <div className="text-xs">
+      <nav className="top-0 w-full z-50 transition-all duration-300 bg-slate-950/20 backdrop-blur-sm ">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-14 sm:h-16 md:h-20">
+            <button className="p-2 text-gray-300 hover:text-white"></button>
           </div>
-          {/*Nav Links*/}
-          <button
-            className="p-2 text-gray-300 hover:text-white"
-            onClick={() => setMobileMenuIsOpen((prev) => !prev)}
-          >
-            {mobileMenuIsOpen ? (
-              <div className="flex text-1xl gap-2">
-                <h1>Close </h1>
-                <X className="w-5 h-5 sm:w-6 sm:h-6" />
-              </div>
-            ) : (
-              <div className="flex text-1xl gap-2">
-                <h1>Menu</h1>
-                <Menu className="w-5 h-5 sm:w-6 sm:h-6"></Menu>
-              </div>
-            )}
-          </button>
         </div>
-      </div>
-      {mobileMenuIsOpen && (
         <div className="bg-slate-900/50 backdrop-blur-lg border-t border-slate-800 animate-in slide-in-from-top duration-300">
           <div className="w-full block md:flex text-center bg-red-500/20 justify-center">
             <div>
@@ -92,7 +61,7 @@ export default function NavBar() {
             </div>
           </div>
         </div>
-      )}
-    </nav>
+      </nav>
+    </div>
   );
 }

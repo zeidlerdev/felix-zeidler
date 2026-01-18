@@ -2,7 +2,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { ArrowRight, ChevronDown, CodeXml, Contact } from "lucide-react";
 import { useEffect, useState } from "react";
 import React from "react";
-import { codeExamples, floatingCards } from "../data/CodeExamples";
+import { codeExamples, floatingCards } from "../../data/CodeExamples";
 import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { Sparkles } from "lucide-react";
 
